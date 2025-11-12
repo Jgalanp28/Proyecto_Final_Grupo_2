@@ -1,5 +1,12 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {}
-  "ghcr.io/devcontainers/features/python:0-3.9"
-}
+    "name": "Dev Container (Python 3.9)",
+    "image": "mcr.microsoft.com/devcontainers/python:3.9",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance"
+            ]
+        }
+    },
+    "postCreateCommand": "pip install --upgrade pip"
