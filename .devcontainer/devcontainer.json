@@ -10,3 +10,4 @@
         }
     },
     "postCreateCommand": "pip install --upgrade pip"
+}
