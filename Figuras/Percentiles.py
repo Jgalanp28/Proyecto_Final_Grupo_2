@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-archivo = 'Quiz Cálculo 1- Gobierno 22 de Octubre(1-18).csv'
+archivo = 'Figuras/quiz.csv'
 df = pd.read_csv(archivo)
 
 columna_p3 = df.iloc[:,3]
