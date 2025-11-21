@@ -29,5 +29,14 @@ def desviacion(nombre_archivo , nombre_columna):
     
         return None 
 
-
-
+def percentiles(nombre_archivo, nombre_columna):
+    try:
+        df = pd.read_csv(nombre_archivo)
+        if nombre_columna not in df.columns:
+            print("No existe la columna")
+            return None
+        percentiles = df[nombre_columna].quantile([0.25, 0.5, 0.75])
+        return percentiles
+    except Exception as e:
+        print("No existe la columna")
+        return None
