@@ -27,4 +27,5 @@ def graficar_desviaciones(nombre_archivo):
         print("Error al procesar el archivo:", e)
 
 
-graficar_desviaciones("Quiz Cálculo 1- Gobierno 22 de Octubre(1-18).csv")
+graficar_desviaciones("Figuras/quiz.csv")
+plt.savefig("Figuras/Desviacion.png")
